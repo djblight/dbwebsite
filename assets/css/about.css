@@ -6,7 +6,7 @@
     z-index: 1; /* Stay on top */
     top: 0;
     right: 0;
-    background-color: #111; /* Black*/
+    background-color: #211F1F; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -17,7 +17,7 @@
     padding: 8px 8px 8px 24px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #8C8989;
     display: block;
     transition: 0.3s
 }
@@ -43,4 +43,9 @@
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+span {
+    float: right;
+    margin-right: 2.5em;
+    margin-top: 1.5em;
 }
