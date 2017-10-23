@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1rem;
+    font-weight:normal;
+    line-height:1.5;
+    color:#333;
+    overflow-x:hidden;
+  }
+  
+  /* The side navigation menu */
+  .sidenav {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 99; /* Stay on top */
+      top: 0;
+      right: 0;
+      background-color: #211F1F; /* Black*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 0.4s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+      padding: 8px 8px 8px 24px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #8C8989;
+      display: block;
+      transition: 0.3s
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover, .offcanvas a:focus{
+      color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      color: red;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+  }
+  /* hamburger nav icon */
+  span {
+      float: right;
+      position: fixed;
+      right: 2.5em;
+      margin-top: 2.0em;
+      z-index: 98; /* Stay on top */
+  }
+  /* start home screen */
+  .v-header{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    color:#fff;
+  }
+  
+  .container{
+    max-width:80%;
+    padding-left:1rem;
+    padding-right:1rem;
+    margin:auto;
+  }
+    
+  .fullscreen-video-wrap{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+  }
+  
+  .fullscreen-video-wrap video{
+    min-height:100%;
+    min-width:100%;
+  }
+  
+  .header-overlay{
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    width:100vw;
+    z-index:1;
+    background: #B59358;
+    opacity:0.60;
+  }
+  
+  .header-content{
+    z-index:2;
+    text-align: center;
+  }
+  
+  .header-content h1{
+    font-size:8rem;
+    text-align: center;
+    color: #4F4848;
+    margin-bottom:0;
+    margin-top: -6.5rem;
+  }
+  .header-content h2{
+    font-size:4rem;
+    text-align: center;
+    color: #202020;
+  }
+  .header-content p{
+    font-size:3.8rem;
+    text-align: center;
+    color: #363535;
+    font-weight: bold;
+    font-family: 'Tempus Sans ITC';
+    display:block;
+    padding-bottom:2rem;
+  }
+  /* end home screen */
+  /* start about section */
+  .section{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    color:#000000;
+  }
+  .section h2 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .section p {
+    font-size: 1.7rem;
+  }
+  .developer {
+    text-align: center;
+    font-style: italic;
+    font-size: 2rem;
+    color: #333;
+  }
+  .section-a{
+    background:#FFF0C2;
+  }
+  .section-b{
+    background:#007d3f;
+  }
+  .section-b h1 {
+      color: #000000;
+      font-weight: 600;
+  }
+ 
+  @media(max-width:960px){
+    .container{
+      padding-right:3rem;
+      padding-left:3rem;
+    }
+  }
+  /* end about section */
+  .container1 {
+    max-width:70%;
+    margin:auto;
+  }
+  .image1 {
+      margin-left: 10rem;
+      margin-top: 5rem;
+  }
+  .image2 {
+    margin-right: 10rem;
+    margin-top: 6rem;
+  }
+  /* start slider */
+  #slider {
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto 0 auto;
+    border-radius: 4px;
+  }
+  
+  #slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 8rem
+  }
+  
+  #slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 80rem;
+    height: 60rem;
+    background: #ccc;
+    text-align: center;
+  }
+  #slider ul li:hover {
+    opacity: .50;
+  }
+  a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: none;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 7rem;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  a.control_prev:hover, a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+  }
+  
+  a.control_prev {
+    border-radius: 0 2px 2px 0;
+  }
+  
+  a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+  }
+  
+  .slider_option :hover {
+    color: #3E403F;
+  }
+  
+  .slider_option {
+    margin: 20px auto;
+    padding-left: 40%;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-width: 1100px) {
+    .image1 {max-width: 8em}
+    .image2 {max-width: 8em}
+    #slider {max-width:50em}
+}
+  /* end slider */
+  
+  .row {
+    height: 100%vh;
+  }
+  
+  h1,h2,h3,h4,h5,h6{
+    font-family:Poppins;
+    text-align: center;
+  }
+  
+  p{
+    font-family:Roboto;
+  }
+  .section-c {
+    background:#BBE8EA;
+    border-top: .4rem solid black;
+    border-bottom: .4rem solid black;
+  }
+  #showcase .showcase-left{
+    padding-top:50%;
+  }
+  #showcase .showcase-left img{
+    margin-top: -4em;
+    background-color: #EFF44C;
+    border: .06em solid blue;
+  }
+  #showcase .showcase-left img:hover{
+    background-color: rgb(62, 251, 191);
+    border: .05em solid #175D17;
+  }
+  #showcase .showcase-right{
+    padding-top:0em;
+    margin-left: 15em;
+    margin-right: -30em;
+    border: .5em solid blue;
+    padding-bottom: 4em;
+  }
+  a {
+    color: black;
+  }
+  a:hover {
+    color: blue;
+  }
+  #showcase .showcase-right li{
+    font-family: 'Poppins';
+    list-style: none;
+    font-size: 26px;
+    text-align: left;
+    padding-top: 4.5rem;
+  }
+  .section-d {
+    
+  }
+  #testimonial1{
+    background:yellow;
+    padding: 50px 0 30px 0;
+    text-align:center;
+    margin-top:40px;
+  }
+  
+  #testimonial1 p{
+    font-size:18px;
+    font-family: 'Josefin Sans';
+    color:#000;
+  }
+  
+  #testimonial1 p.developer{
+    font-size:20px;
+    color:#666;
+  }
+  
+  #info1 .info-right{
+    margin-top:90px;
+  }
+  
+  #info2{
+    margin:20px 0 60px 0;
+  }
+  
+  #contact{
+    background:url(../img/image3.png);
+    padding:40px;
+    color:#fff;
+    border-top:#333 7px solid;
+    border-bottom:#333 7px solid;
+  }
+  
+  
