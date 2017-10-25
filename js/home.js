@@ -1,15 +1,22 @@
 window.sr = ScrollReveal();
+sr.reveal('.header-content', {
+  duration: 3000,
+  origin:'top',
+  distance:'300px'
+});
 sr.reveal('.image1', {
-  duration: 2000,
-  origin:'left'
+  duration: 3000,
+  origin:'top',
+  distance:'300px'
 });
 sr.reveal('.image2', {
-  duration: 2000,
-  origin:'right'
+  duration: 3000,
+  origin:'top',
+  distance:'300px'
 });
 sr.reveal('.showcase-left', {
   duration: 2000,
-  origin:'top',
+  origin:'left',
   distance:'300px'
 });
 sr.reveal('.showcase-right', {
@@ -26,15 +33,27 @@ sr.reveal('#history div', {
   duration: 2000,
   origin:'bottom'
 });
-sr.reveal('.info-left', {
+sr.reveal('.info-top', {
   duration: 2000,
   origin:'left',
   distance:'300px',
   viewFactor: 0.2
 });
-sr.reveal('.info-right', {
+sr.reveal('.info-bottom', {
   duration: 2000,
   origin:'right',
+  distance:'300px',
+  viewFactor: 0.2
+});
+sr.reveal('.container-e', {
+  duration: 2000,
+  origin:'top',
+  distance:'300px',
+  viewFactor: 0.2
+});
+sr.reveal('.container-f', {
+  duration: 2000,
+  origin:'left',
   distance:'300px',
   viewFactor: 0.2
 });

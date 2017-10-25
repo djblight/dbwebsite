@@ -1,6 +1,5 @@
 
 
-
 var byline1 = document.getElementById('byline1');
 byline1Text = byline1.innerHTML;  // Get the content of the H2
 byline1Arr = byline1Text.split(''); 	// Split content into array
