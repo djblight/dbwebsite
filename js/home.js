@@ -1,9 +1,4 @@
 window.sr = ScrollReveal();
-sr.reveal('.header-content', {
-  duration: 3000,
-  origin:'top',
-  distance:'300px'
-});
 sr.reveal('.image1', {
   duration: 3000,
   origin:'top',

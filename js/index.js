@@ -1,4 +1,6 @@
-
+// setTimeout(function() {
+//   window.location.href = "file:///C:/Users/David%20Blight/Desktop/dbwebsite/html/home.html";
+// }, 7000);
 
 var byline1 = document.getElementById('byline1');
 byline1Text = byline1.innerHTML;  // Get the content of the H2
