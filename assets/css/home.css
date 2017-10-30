@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
   }
-  
   body{
     margin:0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,37 +9,48 @@
     line-height:1.5;
     color:#333;
     overflow-x:hidden;
+    z-index: 1;
   }
-  
   /* The side navigation menu */
   .sidenav {
-      height: 100%; /* 100% Full-height */
-      width: 0; /* 0 width - change this with JavaScript */
-      position: fixed; /* Stay in place */
-      z-index: 99; /* Stay on top */
-      top: 0;
-      right: 0;
-      background-color: #211F1F; /* Black*/
-      overflow-x: hidden; /* Disable horizontal scroll */
-      padding-top: 60px; /* Place content 60px from the top */
-      transition: 0.4s; /* 0.5 second transition effect to slide in the sidenav */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    background-color: #211F1F;
+    overflow-x: hidden;
+    padding-top: 60px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
   }
-  
   /* The navigation menu links */
   .sidenav a {
-      padding: 8px 8px 8px 24px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #8C8989;
-      display: block;
-      transition: 0.3s
+    padding: 8px 8px 8px 24px;
+    -webkit-text-decoration: none;
+    -moz-text-decoration: none;
+    -ms-text-decoration: none;
+    -o-text-decoration: none;
+    text-decoration: none;
+    font-size: 25px;
+    color: #8C8989;
+    display: block;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 99;
   }
-  
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover, .offcanvas a:focus{
-      color: #f1f1f1;
+      color: linen;
+      z-index: 99;
   }
-  
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
       position: absolute;
@@ -51,8 +61,8 @@
       font-size: 36px;
       margin-left: 50px;
       color: red;
+      z-index: 99;
   }
-  
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
@@ -73,36 +83,53 @@
     align-items:center;
     color:#fff;
   }
-  
   .container{
     max-width:80%;
     padding-left:1rem;
     padding-right:1rem;
     margin:auto;
   }
-    
   #intro {
-    background: url(..//images/beach.jpg) no-repeat center center fixed; 
+    background: url(..//images/beach.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+    -ms-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100vh;
-    overflow:hidden;
-  }  
-  
-  .header-overlay{
-    height:100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .header-overlay {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
     bottom: 0;
-    width:100vw;
-    z-index:3;
+    width: 100vw;
+    z-index: 99;
+    -webkit-opacity: .65;
+    -moz-opacity: .65;
+    -ms-opacity: .65;
+    -o-opacity: .65;
     opacity: .65;
   }
   .header-content{
@@ -127,11 +154,19 @@
   }
   /* end home screen */
   /* start about section-a */
-  .section-a{
-    height:100vh;
-    display:flex;
-    align-items:center;
-    color:#000000;
+  .section-a {
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    color: #000000;
   }
   .section-a h2 {
     text-align: center;
@@ -149,18 +184,44 @@
     font-size: 2rem;
     color: #333;
   }
-  .section-a{
-    background: url(..//images/stone.jpg) no-repeat center center fixed; 
+  .section-a {
+    background: url(..//images/stone.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+    -ms-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
   }
-  .section-b{
-    height:100vh;
-    display:flex;
-    align-items:center;
-    background:#007d3f;
+  .section-b {
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    background: #007d3f;
+    z-index: 1;
   }
   .section-b h1 {
       color: #000000;
@@ -191,16 +252,18 @@
     position: relative;
     overflow: hidden;
     margin: 0px auto 0 auto;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
     border-radius: 4px;
   }
-  
   #slider ul {
     position: relative;
     margin: 0;
     padding: 0;
     height: 8rem
   }
-  
   #slider ul li {
     position: relative;
     display: block;
@@ -213,9 +276,14 @@
     text-align: center;
   }
   #slider ul li:hover {
+    -webkit-opacity: .50;
+    -moz-opacity: .50;
+    -ms-opacity: .50;
+    -o-opacity: .50;
     opacity: .50;
   }
-  a.control_prev, a.control_next {
+  a.control_prev,
+  a.control_next {
     position: absolute;
     top: 40%;
     z-index: 999;
@@ -225,31 +293,51 @@
     height: auto;
     background: none;
     color: rgb(255, 0, 0);
+    -webkit-text-decoration: none;
+    -moz-text-decoration: none;
+    -ms-text-decoration: none;
+    -o-text-decoration: none;
     text-decoration: none;
     font-weight: 600;
     font-size: 7rem;
+    -webkit-opacity: 0.8;
+    -moz-opacity: 0.8;
+    -ms-opacity: 0.8;
+    -o-opacity: 0.8;
     opacity: 0.8;
     cursor: pointer;
   }
-  
-  a.control_prev:hover, a.control_next:hover {
+  a.control_prev:hover,
+  a.control_next:hover {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
     opacity: 1;
     -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
-  
   a.control_prev {
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    -ms-border-radius: 0 2px 2px 0;
+    -o-border-radius: 0 2px 2px 0;
     border-radius: 0 2px 2px 0;
   }
-  
   a.control_next {
     right: 0;
+    -webkit-border-radius: 2px 0 0 2px;
+    -moz-border-radius: 2px 0 0 2px;
+    -ms-border-radius: 2px 0 0 2px;
+    -o-border-radius: 2px 0 0 2px;
     border-radius: 2px 0 0 2px;
   }
-  
   .slider_option :hover {
     color: #EF78DB;
   }
-  
   .slider_option {
     margin: 20px auto;
     padding-left: 40%;
@@ -268,24 +356,46 @@
   .row {
     height: 100%vh;
   }
-  
   h1,h2,h3,h4,h5,h6{
     font-family:Poppins;
     text-align: center;
   }
-  
   p{
     font-family:Roboto;
   }
   .section-c {
-    background: url(..//images/meetup.png) center center fixed; 
+    background: url(..//images/meetup.png) center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+    -ms-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height:100vh;
-    display:flex;
-    align-items:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
   }
   #showcase .showcase-left{
     padding-top:50%;
@@ -323,16 +433,39 @@
   /* end meetup groups */
   /* start experience */
   .section-d {
-    background: url(..//images/business3.jpeg) center center fixed; 
+    background: url(..//images/business3.jpeg) center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+    -ms-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height:100vh;
-    display:flex;
-    align-items:center;
-  }
-  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+  } 
   .info-top {
     border-bottom: .1em solid black;
     font-size: 18px;
@@ -355,14 +488,38 @@
   /* end experience */
   /* start skills */
   .section-e {
-    background: url(..//images/skills.jpeg) center center fixed; 
+    background: url(..//images/skills.jpeg) center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+    -ms-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height:100vh;
-    display:flex;
-    align-items:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
     padding: 0;
     margin: 0;
   }
@@ -373,11 +530,14 @@
     text-align: center;
     padding-left: 0;
   }
-  
   .li-skills {
     display: inline-block;
     margin: 7px;
     padding: 15px 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
     border-radius: 50%;
     color: black;
     background: #FFC555;
@@ -388,9 +548,17 @@
   /* end skills */
   /* start projects */
   .section-f {
-    display:flex;
-    align-items:center;
-    color:#000000;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    color: #000000;
     width: 100%;
   }
   .container-f {
@@ -408,7 +576,6 @@
     width: 90%;
     text-align: center;
   }
-  
   .photo-grid li {
     border-left: 20px solid white;
     border-right: 20px solid white;
@@ -416,13 +583,11 @@
     margin: 3em;
     width: 289px;
   }
-  
   .photo-grid img {
     display: block;
     height: auto;
     max-width: 100%;
   }
-  
   .box {
     cursor: pointer;
     height: 300px;
@@ -430,17 +595,35 @@
     overflow: hidden;
     width: 400px;
   }
-  
   .box img {
     position: absolute;
     left: 0;
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
     -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
   }
-  
   .box .overbox {
     background-color: #008CF4;
     position: absolute;
@@ -450,27 +633,82 @@
     z-index: 100;
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
     -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
     opacity: 0;
     width: 360px;
     height: 260px;
     padding: 80px 20px;
   }
-  
-  .box:hover .overbox { opacity: 1; }
-  
+  .box:hover .overbox {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+  }
   .box .overtext {
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
     -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    -o-transform: translateY(40px);
     transform: translateY(40px);
     -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    -o-transform: translateY(40px);
+    transform: translateY(40px);
   }
-  
   .box .title {
     font-size: 2em;
     padding-top: -2em;
@@ -478,41 +716,110 @@
     color: black;
     font-weight: 500;
     text-transform: uppercase;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
     opacity: 0;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -ms-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
     transition-delay: 0.1s;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
     transition-duration: 0.2s;
   }
-  
   .box:hover .title,
   .box:focus .title {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
     opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
   }
-  
   .box .tagline {
     font-size: 1.5em;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
     opacity: 0;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
     transition-delay: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
     transition-duration: 0.2s;
   }
-  
   .box:hover .tagline,
   .box:focus .tagline {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
     opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
     transform: translateX(0px);
     -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
   }
   /* end projects */
   /* start contact */
   .section-g {
-    background: url(..//images/contact.jpg) no-repeat center center fixed; 
+    background: url(..//images/contact.jpg) no-repeat center center fixed;
     -webkit-background-size: 30%;
     -moz-background-size: 30%;
+    -ms-background-size: 30%;
     -o-background-size: 30%;
     background-size: 30%;
-    height:100vh;
-    display:flex;
+    -webkit-background-size: 30%;
+    -moz-background-size: 30%;
+    -ms-background-size: 30%;
+    -o-background-size: 30%;
+    background-size: 30%;
+    -webkit-background-size: 30%;
+    -moz-background-size: 30%;
+    -ms-background-size: 30%;
+    -o-background-size: 30%;
+    background-size: 30%;
+    -webkit-background-size: 30%;
+    -moz-background-size: 30%;
+    -ms-background-size: 30%;
+    -o-background-size: 30%;
+    background-size: 30%;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
     align-items: center;
   }
   #showcase .showcase-left1{
@@ -545,6 +852,10 @@
   }
   .round {
     width: 44rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
     border-radius: 50%;
     margin-left: -4em;
   }
