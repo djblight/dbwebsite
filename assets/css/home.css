@@ -353,9 +353,6 @@
 }
   /* end slider */
   /* start meetup groups */
-  .row {
-    height: 100%vh;
-  }
   h1,h2,h3,h4,h5,h6{
     font-family:Poppins;
     text-align: center;
@@ -789,28 +786,28 @@
   /* end projects */
   /* start contact */
   .section-g {
-    background: url(..//images/contact.jpg) no-repeat center center fixed;
-    -webkit-background-size: 30%;
-    -moz-background-size: 30%;
-    -ms-background-size: 30%;
-    -o-background-size: 30%;
-    background-size: 30%;
-    -webkit-background-size: 30%;
-    -moz-background-size: 30%;
-    -ms-background-size: 30%;
-    -o-background-size: 30%;
-    background-size: 30%;
-    -webkit-background-size: 30%;
-    -moz-background-size: 30%;
-    -ms-background-size: 30%;
-    -o-background-size: 30%;
-    background-size: 30%;
-    -webkit-background-size: 30%;
-    -moz-background-size: 30%;
-    -ms-background-size: 30%;
-    -o-background-size: 30%;
-    background-size: 30%;
-    height: 100vh;
+    background: url(..//images/meet.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 92vh;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -822,42 +819,70 @@
     -o-align-items: center;
     align-items: center;
   }
-  #showcase .showcase-left1{
-    padding-top:50%;
+  input {
+    width: 25em;
+    line-height: 1.8;
+    font-size: 14px;
+    align-content: center;
   }
-  #showcase .showcase-left1 img{
-    margin-top: -9em;
-    background-color: #EFF44C;
-    border: .06em solid #9DF917;
+  textarea {
+    width: 25em;
+    line-height: 1.8;
+    height: 10em;
+    font-size: 14px;
+    align-content: center;
   }
-  #showcase .showcase-right1 {
-    margin-top: 7em;
-    margin-left: 46em;
-    margin-right: -50em;
-    background-color: #9DF917;
-    border: .7em double #2A54AB;
-    padding-bottom: 4em;
+  button {
+    width: 19.4em;
+    background-color: #333;
+    font-size: 18px;
+    padding: 8px;
   }
-  #showcase .showcase-right1 h2 {
-    color: #2A54AB;
+  .submit:hover {
+    color: yellow;
   }
-  #showcase .showcase-right1 h3 {
-    color: grey;
-  }
-  #showcase .showcase-right1 a {
-    color: #504E4E;
-  }
-  #showcase .showcase-right1 a:hover {
-    color: #2A54AB;
-  }
-  .round {
-    width: 44rem;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    margin-left: -4em;
-  }
-
-
+.showcase-left2 img{
+  width: 80%;
+  height: 90%;
+  margin-left: 5em;
+  float: right;
+  padding-top: 5em;
+}
+.showcase-right2 {
+  height: 47em;
+  width: 43em;
+  background-color: #18D118;
+  padding:40px;
+  color:#fff;
+  border-top:#333 7px solid;
+  border-bottom:#333 7px solid;
+  margin-left: 26em;
+}
+.section-h {
+  height: 8vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+.info-left h2{
+font-size: 2em;
+margin-right: 40%;
+color: black;
+padding-left: 0;
+margin-left: 0;
+}
+.info-right h2{
+font-size: 2em;
+text-align: center;
+color: black;
+}

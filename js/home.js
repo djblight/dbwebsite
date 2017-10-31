@@ -52,6 +52,18 @@ sr.reveal('.container-f', {
   distance:'300px',
   viewFactor: 0.2
 });
+sr.reveal('.showcase-left2', {
+  duration: 2000,
+  origin:'left',
+  distance:'300px',
+  viewFactor: 0.2
+});
+sr.reveal('.showcase-right2', {
+  duration: 2000,
+  origin:'right',
+  distance:'300px',
+  viewFactor: 0.2
+});
 
 $(function() {
 // Smooth Scrolling
@@ -129,4 +141,5 @@ jQuery(document).ready(function ($) {
     
     });
     // end slider screen
+    // start contact me section
     
