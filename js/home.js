@@ -81,17 +81,15 @@ if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && lo
 });
 });
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-document.getElementById("mySidenav").style.width = "200px";
-document.getElementById("main").style.marginLeft = "200px";
-};
+// start nav
+function openSlideMenu(){
+    document.getElementById('side-menu').style.width = '220px';
+  }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-document.getElementById("mySidenav").style.width = "0";
-document.getElementById("main").style.marginLeft = "0";
-};
+  function closeSlideMenu(){
+    document.getElementById('side-menu').style.width = '0';
+  }
+// end nav
 
 // start slider screen
 jQuery(document).ready(function ($) {
@@ -142,4 +140,76 @@ jQuery(document).ready(function ($) {
     });
     // end slider screen
     // start contact me section
+    var howOften = 5; //number often in seconds to rotate
+    var current = 0; //start the counter at 0
+    var ns6 = document.getElementById&&!document.all; //detect netscape 6
+   
+    // place your images, text, etc in the array elements here
+    var items = new Array();
+        items[0]="<img src='..//assets/images/david.JPG' border-radius='50px' />"; //David Blight image
+        items[1]="<a href='https://www.linkedin.com/in/david-blight-mba-1ba88624/' target='_blank'><img alt='Linkedin' src=' ..//assets/images/linkedin.png' height='300' width='300' border='0' /></a>"; //a linked image
+        items[2]="<a href='https://github.com/djblight' target='_blank'><img alt='GitHub' src='..//assets/images/github.png' height='300' width='300' border='0' /></a>"; //a linked image
+        items[3]="<a href='https://twitter.com/DavidBlight1' target='_blank'><img alt='Twitter' src='..//assets/images/twitter.png' height='300' width='300' border='0' /></a>"; //a linked image
+        function rotater() {
+        document.getElementById("placeholder").innerHTML = items[current];
+        current = (current==items.length-1) ? 0 : current + 1;
+        setTimeout("rotater()",howOften*1000);
+    }
+    function rotater() {
+        if(document.layers) {
+            document.placeholderlayer.document.write(items[current]);
+            document.placeholderlayer.document.close();
+        }
+        if(ns6)document.getElementById("placeholderdiv").innerHTML=items[current]
+            if(document.all)
+                placeholderdiv.innerHTML=items[current];
+    
+        current = (current==items.length-1) ? 0 : current + 1; //increment or reset
+        setTimeout("rotater()",howOften*1000);
+    }
+    window.onload=rotater;
+    // start contact page
+    $(document).ready(function() {
+      // Test for placeholder support
+        $.support.placeholder = (function(){
+            var i = document.createElement('input');
+            return 'placeholder' in i;
+        })();
+    
+        // Hide labels by default if placeholders are supported
+        if($.support.placeholder) {
+            $('.form-label').each(function(){
+                $(this).addClass('js-hide-label');
+            });  
+    
+            // Code for adding/removing classes here
+            $('.form-group').find('input, textarea').on('keyup blur focus', function(e){
+                
+                // Cache our selectors
+                var $this = $(this),
+                    $parent = $this.parent().find("label");
+    
+                if (e.type == 'keyup') {
+                    if( $this.val() == '' ) {
+                        $parent.addClass('js-hide-label'); 
+                    } else {
+                        $parent.removeClass('js-hide-label');   
+                    }                     
+                } 
+                else if (e.type == 'blur') {
+                    if( $this.val() == '' ) {
+                        $parent.addClass('js-hide-label');
+                    } 
+                    else {
+                        $parent.removeClass('js-hide-label').addClass('js-unhighlight-label');
+                    }
+                } 
+                else if (e.type == 'focus') {
+                    if( $this.val() !== '' ) {
+                        $parent.removeClass('js-unhighlight-label');
+                    }
+                }
+            });
+        } 
+    });
     

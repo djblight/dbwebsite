@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>home</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/home.css">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   </head>
   <body>
       <!-- start home screen -->
-  <header class="v-header container">
-    <div class="header-overlay">
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Intro</a>
+  <!-- start nav -->
+  <div id="side-menu" class="side-nav">
+    <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="index.html">Intro</a>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#charlotte">See Charlotte</a>
@@ -24,19 +23,41 @@
         <a href="#skills">Language Skills</a>
         <a href="#projects">Project Portfolio</a>
         <a href="#contact">Contact</a>
-    </div>
-    <!-- Use element to open the sidenav -->
-    <span onclick="openNav()"><img src="..//assets/images/bars.png"  width= "50px"></span>
-    <a class="anchor" name="home"></a>
-    </div>
-    <div class="header-content text-md-center" id="intro">
-      <p>"I view each day as an opportunity to solve new challenges with the latest and best tools that today's technology has to offer. I believe the way that it has always been is not how it has to stay. There is always an opportunity to improve and excel and I don't want to miss one minute of it."</p>
-      <p class="developer">~ David Blight</p>
-      <br>
-      <h2>Today is a Great Day to be Awesome!</h2>
-    </div>
-  </header>
+  </div>
+  <a><span onclick="openSlideMenu()">
+      <div id="circle1">
+          <span class="innerTEXT1">db</span>
+        </div>
+    </span></a>
+  <!-- end nav -->
+  <a class="anchor" name="home"></a>
+  <section class="section section-home" section id="home"> 
+      <div class="container-home"> 
+          <div class="container2">
+              
+            </div>
+          <div id="main">
+              <div id="d1"></div>
+              <div id="d2"></div>
+              <div id="d3"></div>
+              <div id="d4"></div>
+              <div id="d5"></div>
+          </div>
+      </div> 
+     </section>
     <!-- end home screen -->
+    <section class="section section-1a" section id="info1a"> 
+        <div class="container"> 
+         <div class="row"> 
+          <div class="col-md-12 col-sm-12"> 
+           <div class="info-center"> 
+              <p>"I view each day as an opportunity to solve new challenges with the latest and best tools that today's technology has to offer. I believe the way that it has always been is not how it has to stay. There is always an opportunity to improve and excel and I don't want to miss one minute of it."</p>
+              <h5>~ David Blight</h5> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+    </section>
     <!-- start about screen -->
   <a class="anchor" name="about"></a>
   <section class="section section-a" section id="history">
@@ -129,6 +150,17 @@
     </section>
     </section>
     <!-- end meetup groups -->
+    <section class="section section-1b" section id="info1b"> 
+        <div class="container"> 
+         <div class="row"> 
+          <div class="col-md-12 col-sm-12"> 
+           <div class="info-center"> 
+              <p>"Today is a Great Day to be AWESOME!"</p> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+    </section>
     <!-- start section d experience screen -->
     <a class="anchor" name="experience"></a>
     <section class="section section-d">
@@ -149,11 +181,11 @@
               <div class="col-md-12 col-sm-12">
                 <div class="info-bottom">
                   <h2>Education</h2>
-                  <h4>University of North Carolina at Charlotte, 2017</h4>
+                  <a href="https://bootcamp.uncc.edu/" target="_blank"><h4>University of North Carolina at Charlotte, 2017</h4></a>
                   <p>Certificate, Full Stack Web Developer</p>
-                  <h4>Montreat College, Charlotte NC, 2001</h4>
+                  <a href="https://www.montreat.edu/academics/graduate/business-administration/" target="_blank"><h4>Montreat College, Charlotte NC, 2001</h4></a>
                   <p>MBA</p>
-                  <h4>LeTourneau University, Houston TX, 1997</h4>
+                  <a href="http://www.letu.edu/" target="_blank"><h4>LeTourneau University, Houston TX, 1997</h4></a>
                   <p>BS,BM</p>
                 </div>
               </div>
@@ -162,6 +194,17 @@
           </div>
     </section>
           <!-- end section d screen -->
+          <section class="section section-1c" section id="info1c"> 
+              <div class="container"> 
+               <div class="row"> 
+                <div class="col-md-12 col-sm-12"> 
+                    <div class circle2 id="circle2">
+                        <span class="innerTEXT2">db</span>
+                      </div> 
+                </div> 
+               </div> 
+              </div> 
+          </section>
     <!-- start section e screen -->
     <a class="anchor" name="skills"></a>
     <section class="section section-e">
@@ -171,35 +214,36 @@
                   <br>
                   <br>
                   <ul class="ul-skills">
-                      <li class="li-skills">Javascript</li>
-                      <li class="li-skills">HTML</li>
-                      <li class="li-skills">CSS</li>
-                      <li class="li-skills">ES6</li>
-                      <li class="li-skills">React</li>
-                      <li class="li-skills">Node.js</li>
-                      <li class="li-skills">Bootstrap</li>
-                      <li class="li-skills">Sequelize</li>
-                      <li class="li-skills">jQuery</li>
-                      <li class="li-skills">Firebase</li>
-                      <li class="li-skills">Heroku</li>
-                      <li class="li-skills">MySQL</li>
-                      <li class="li-skills">SQL</li>
-                      <li class="li-skills">Visual Studio</li>
-                      <li class="li-skills">Postman</li>
-                      <li class="li-skills">Slack</li>
-                      <li class="li-skills">GitHub</li>
-                      <li class="li-skills">Express</li>
-                      <li class="li-skills">Handlebars.js</li>
-                      <li class="li-skills">API's</li>
-                      <li class="li-skills">AJAX</li>
-                      <li class="li-skills">Babel.js</li>
-                      <li class="li-skills">JawsDB</li>
-                      <li class="li-skills">MongoDB</li>
-                      <li class="li-skills">C#</li>
+                      <li class="li-skills"><p><a href="https://www.javascript.com/" target="_blank">Javascript</a></li>
+                      <li class="li-skills"><a href="http://html5.com/" target="_blank">HTML</a></li>
+                      <li class="li-skills"><a href="http://css3.com/" target="_blank">CSS</a></li>
+                      <li class="li-skills"><a href="http://es6js.com/" target="_blank">ES6</a></li>
+                      <li class="li-skills"><a href="https://reactjs.net/" target="_blank">ReactJS</a></li>
+                      <li class="li-skills"><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+                      <li class="li-skills"><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                      <li class="li-skills"><a href="http://docs.sequelizejs.com/" target="_blank">Sequelize</a></li>
+                      <li class="li-skills"><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+                      <li class="li-skills"><a href="https://firebase.google.com/" target="_blank">Firebase</a></li>
+                      <li class="li-skills"><a href="https://signup.heroku.com" target="_blank">Heroku</a></li>
+                      <li class="li-skills"><a href="https://www.mysql.com/" target="_blank">MySQL</a></li>
+                      <li class="li-skills"><a href="https://www.w3schools.com/sql/" target="_blank">SQL</a></li>
+                      <li class="li-skills"><a href="https://www.visualstudio.com/" target="_blank">Visual Studio</a></li>
+                      <li class="li-skills"><a href="https://www.getpostman.com/" target="_blank">Postman</a></li>
+                      <li class="li-skills"><a href="https://slack.com" target="_blank">Slack</a></li>
+                      <li class="li-skills"><a href="https://www.github.com/" target="_blank">GitHub</a></li>
+                      <li class="li-skills"><a href="http://expressjs.com/" target="_blank">Express.js</a></li>
+                      <li class="li-skills"><a href="http://handlebarsjs.com/" target="_blank">Handlebars.js</a></li>
+                      <li class="li-skills"><a href="https://www.w3schools.com/graphics/google_maps_intro.asp" target="_blank">API's</a></li>
+                      <li class="li-skills"><a href="http://api.jquery.com/jQuery.ajax/" target="_blank">AJAX</a></li>
+                      <li class="li-skills"><a href="https://babeljs.io/" target="_blank">Babel.js</a></li>
+                      <li class="li-skills"><a href="https://www.jawsdb.com/" target="_blank">JawsDB</a></li>
+                      <li class="li-skills"><a href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>
+                      <li class="li-skills"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a></li>
+                      <li class="li-skills"><a href="http://php.net/" target="_blank">php</a></li>
                   </ul>
                   
         </div>
-    </section> -->
+    </section>
           <!-- end section e screen -->
           <!-- start of project screen -->
           <a class="anchor" name="projects"></a>
@@ -304,68 +348,49 @@
           </section>
           <!-- end of project screen -->
     <!-- start contact screen -->
-    <a class="anchor" name="contact"></a>
-    <section class="section section-g">
-      <section id="showcase">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <div class="showcase-left2">
-                <img src="..//assets/images/contact.jpg" height="180" width="320" alt="Contact Me">
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="showcase-right2">
-                <div class="contact-form2" id="contact-form">
-                <form method="POST" action="http://formspree.io/d.p.blight15@gmail.com">
-                  <table style="height:400px">
-                    <tr valign="first">
-                      <th><input type="text" input id="inputName" placeholder="Your name"></th>
-                    </tr>
-                    <tr valign="second">
-                      <th><input type="text" input id="inputEmail" placeholder="Your email address"></th>
-                    </tr>
-                    <tr valign="third">
-                      <th><input type="text" input id="inputPhone" placeholder="Your phone number"></th>
-                    </tr>
-                    <tr valign="fourth">
-                      <th><input type="text" input id="inputSubject" placeholder="Subject"></th>
-                    </tr>
-                    <tr valign="fifth">
-                      <th><textarea name="message" id="inputMessage" placeholder="Your message"></textarea></th>
-                    </tr>
-                    <tr valign="sixth">
-                      <th><button type="submit" button class="submit">Send</button></th>
-                    </tr>
-                  </table>
-                  <input type="text" name="_gotcha" style="display:none" />
-                </form>
-                </div>
-              </div>            
-            </div>
-          </div>
-        </div>
-      </section>
+    <a class="anchor" name="contact"></a> 
+    <section class="section section-g"> 
+     <section id="showcase"> 
+      <div class="container"> 
+       <div class="rowg"> 
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+         <div class="showcase-left2"> 
+          <layer id="placeholderlayer"></layer> 
+          <div id="placeholderdiv"></div> 
+         </div> 
+        </div> 
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+         <div class="showcase-right2"> 
+            <h1>Contact Information</h1>
+            <br>
+            <br>
+            <h2>Phone:  (803) 526-4512</h2>
+            <br>
+            <br>
+            <h2>Submit Email To:</h2>
+            <br>
+            <br>
+            <h3><a href="mailto:d.p.blight15@gmail.com">d.p.blight15@gmail.com</a></h3>
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </section> 
+    </section> 
+    <section class="section section-h" id="info2"> 
+     <div class="container"> 
+      <div class="row"> 
+       <div class="col-md-12 col-sm-12"> 
+        <div class="info-center"> 
+         <h2>Located in Lake Wylie, SC</h2> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
     </section>
-    <section class="section section-h" id="info2">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <div class="info-left">
-                <h2>Located in Lake Wylie, SC</h2>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="info-right">
-                <h2>Call Me At 803-526-4512!</h2>
-                </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    
     <!-- end contact screen -->
-    
+    <script language="JavaScript1.2"></script>
     <script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
